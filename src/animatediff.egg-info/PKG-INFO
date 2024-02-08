@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: animatediff
+Version: 0.1.dev193+g111f5e1.d20231226
+Author: Andi Powers-Holmes
+Maintainer: Andi Powers-Holmes
+Maintainer-email: aholmes@omnom.net
+Requires-Python: >=3.10
+License-File: LICENSE.md
+Requires-Dist: accelerate>=0.20.3
+Requires-Dist: colorama<0.5.0,>=0.4.3
+Requires-Dist: cmake>=3.25.0
+Requires-Dist: diffusers==0.18.2
+Requires-Dist: einops>=0.6.1
+Requires-Dist: gdown>=4.6.6
+Requires-Dist: ninja>=1.11.0
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: omegaconf>=2.3.0
+Requires-Dist: pillow<10.0.0,>=9.4.0
+Requires-Dist: pydantic<2.0.0,>=1.10.0
+Requires-Dist: rich<14.0.0,>=13.0.0
+Requires-Dist: safetensors>=0.3.1
+Requires-Dist: sentencepiece>=0.1.99
+Requires-Dist: shellingham<2.0.0,>=1.5.0
+Requires-Dist: torch<2.2.0,>=2.0.0
+Requires-Dist: torchaudio
+Requires-Dist: torchvision
+Requires-Dist: transformers>=4.30.2
+Requires-Dist: typer<1.0.0,>=0.9.0
+Requires-Dist: controlnet_aux
+Requires-Dist: matplotlib
+Requires-Dist: ffmpeg-python>=0.2.0
+Requires-Dist: mediapipe
+Provides-Extra: dev
+Requires-Dist: black>=22.3.0; extra == "dev"
+Requires-Dist: ruff>=0.0.234; extra == "dev"
+Requires-Dist: setuptools-scm>=7.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.3.0; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Provides-Extra: xformers
+Requires-Dist: xformers>=0.0.21; extra == "xformers"
+Provides-Extra: rife
+Requires-Dist: ffmpeg-python>=0.2.0; extra == "rife"
+Provides-Extra: stylize
+Requires-Dist: ffmpeg-python>=0.2.0; extra == "stylize"
+Requires-Dist: onnxruntime-gpu; extra == "stylize"
+Requires-Dist: pandas; extra == "stylize"
+Provides-Extra: dwpose
+Requires-Dist: onnxruntime-gpu; extra == "dwpose"
+Provides-Extra: stylize-mask
+Requires-Dist: ffmpeg-python>=0.2.0; extra == "stylize-mask"
+Requires-Dist: pandas; extra == "stylize-mask"
+Requires-Dist: segment-anything-hq==0.3; extra == "stylize-mask"
+Requires-Dist: groundingdino-py==0.4.0; extra == "stylize-mask"
+Requires-Dist: gitpython; extra == "stylize-mask"
+Requires-Dist: rembg[gpu]; extra == "stylize-mask"
+Requires-Dist: onnxruntime-gpu; extra == "stylize-mask"

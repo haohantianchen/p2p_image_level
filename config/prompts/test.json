@@ -1,0 +1,69 @@
+{
+  "name": "dance",
+  "path": "models/sd/cyberrealistic_v33.safetensors",
+  "vae_path": "",
+  "motion_module": "models/motion-module/mm_sd_v15_v2.ckpt",
+  "compile": false,
+  "tensor_interpolation_slerp": true,
+  "seed": [
+    -1
+  ],
+  "scheduler": "k_dpmpp_2m",
+  "steps": 20,
+  "guidance_scale": 10.0,
+  "unet_batch_size": 1,
+  "clip_skip": 2,
+  "prompt_fixed_ratio": 1.0,
+  "head_prompt": "((best quality)), ((masterpiece)), ((realistic)), beautiful girl, doing a speech, confident stance",
+  "prompt_map": {
+    "0": "high-resolution, living room,smiling"
+  },
+  "tail_prompt": "",
+  "n_prompt": [
+    "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  ],
+  "is_single_prompt_mode": false,
+  "lora_map": {},
+  "motion_lora_map": {
+    "models/motion_lora/v2_lora_ZoomIn.ckpt": 1.0
+  },
+  "ip_adapter_map": {},
+  "img2img_map": {},
+  "region_map": {},
+  "controlnet_map": {
+    "input_image_dir": "../stylize/2023-11-09T22-36-23-sample-mistoonanime_v20/00_controlnet_imag",
+    "max_samples_on_vram": 200,
+    "max_models_on_vram": 3,
+    "save_detectmap": true,
+    "preprocess_on_gpu": true,
+    "is_loop": false,
+    "controlnet_densepose": {
+      "enable": true,
+      "use_preprocessor": false,
+      "guess_mode": false,
+      "controlnet_conditioning_scale": 1.0,
+      "control_guidance_start": 0.0,
+      "control_guidance_end": 1.0,
+      "control_scale_list": []
+    }
+  },
+  "upscale_config": {},
+  "stylize_config": {
+    "0": {
+      "width": 512,
+      "height": 904,
+      "length": 128,
+      "context": 16,
+      "overlap": -1,
+      "stride": 1
+    }
+  },
+  "output": {
+    "format": "gif",
+    "fps": 1,
+    "encode_param": {
+      "crf": 10
+    }
+  },
+  "result": {}
+}
