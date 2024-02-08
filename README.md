@@ -1,8 +1,12 @@
 The code should only requires diffusers==0.18.2.My enviroment is same as https://github.com/haohantianchen/Animate.
 
 # usage
-replace the files in `src` dir in https://github.com/haohantianchen/Animate   
-copy the `p2p` dir into the Animate dir  
+Implement reconstruction, generate foreground and warpped foreground
 ```
-bash infer.sh
+python test_p2p_c.py
 ```
+Get the latents needed for reconstruction
+```
+python test_nti.py
+```
+
